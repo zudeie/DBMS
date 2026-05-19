@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>DBMS</h1>   
-    <h2>What is DBMS?</h2>
+    <h2 id="h2">What is DBMS?</h2>
     <p>DBMS stands for Database Management System. It is a software application that allows users to create, manage, and manipulate databases. A DBMS provides an interface for users to interact with the database, enabling them to store, retrieve, and modify data efficiently.</p>
     <h2>Types of DBMS</h2>
     <ul>
@@ -15,6 +16,17 @@
         <li>NoSQL DBMS:</li>
         <li>Graph DBMS:</li>
     </ul>
+    <button id="button">Click me</button>
+    
+    <script>
+        document.getElementsByTagName("title")[0].innerHTML = "DBMS";
+        h2=document.getElementById("h2");
+        bttn=document.getElementById("button");
+        bttn.addEventListener("click",function(){
+            h2.innerHTML="What do you think is DBMS?";
+        });
+    
+    </script>
     
 </body>
 </html>
